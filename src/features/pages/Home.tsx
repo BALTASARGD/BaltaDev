@@ -1,8 +1,9 @@
-import { lazy, Suspense } from "react";
+import { lazy } from "react";
 import '../../Styles/home.css'; // Asegúrate de que esta ruta sea correcta
 import '../../Styles/sideBarRight.css'; // Importa los estilos del sidebar
 import { headerIntroData } from "../../assets/lib/data"; // Importa headerIntroData
 import React from "react";
+import logo from '../../assets/images/logo balta2.jpg'; // Asegúrate de que esta ruta sea correcta
 
 const LazySideBarRight = lazy(() => import("../components/SideBarRight"));
 
@@ -11,10 +12,9 @@ const Home = () => {
 
   return (
     <div>
-      <Suspense fallback={<div>Loading...</div>}>
-        <LazySideBarRight />
-      </Suspense>
+      <LazySideBarRight />
       <div className="home">
+        <img src={logo} alt="Logo" className="home-logo" />
         <img src={profilepicture} alt="Profile" />
         <h1>{title.en}</h1>
         <h2>{subtitle}</h2>

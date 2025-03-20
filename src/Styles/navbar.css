@@ -7,7 +7,7 @@ nav {
   justify-content: center;
   align-items: center;
   width: 50%; /* Ocupa el 50% del ancho de la página */
-  margin: 20px auto 0 auto; /* Agrega un margen superior y centra la barra de navegación */
+  margin: 40px auto 0 auto; /* Agrega un margen superior y centra la barra de navegación */
 }
 
 nav ul {

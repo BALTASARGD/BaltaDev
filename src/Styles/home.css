@@ -3,12 +3,22 @@ h-screen {
 }
 
 .home {
+  padding: 20px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  text-align: center;
+}
+
+.home-logo {
+  position: absolute;
+  top: -30px;
+  left: 130px;
+  width: 50px; /* Ajusta el tamaño del logo */
+  height: 50px; /* Ajusta el tamaño del logo */
+  border-radius: 10px; /* Esquinas redondeadas */
 }
 
 .home img {
@@ -22,11 +32,18 @@ h-screen {
 .home h1 {
   font-size: 2.5rem;
   margin: 20px 0;
+  color: #ff6600;
+}
+
+.home h2 {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: #ff6600;
 }
 
 .home p {
-    color: black;
-  font-size: 1.2rem;
+  color: #333;
+  font-size: 1rem;
   margin: 10px 0;
   max-width: 800px; /* Controla el ancho del contenedor del texto */
   line-height: 1.5; /* Ajusta la altura de línea para mejorar la legibilidad */
@@ -36,6 +53,7 @@ h-screen {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  gap: 20px;
 }
 
 .home .buttons a {
@@ -68,4 +86,16 @@ h-screen {
 
 .home .buttons .secondary-btn:hover {
   background-color: #d48957;
+}
+
+.main-btn {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.main-btn:hover {
+  background-color: #e55d00;
 }
