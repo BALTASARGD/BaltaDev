@@ -1,6 +1,7 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./features/components/Navbar";
 import AppRoutes from "./features/routing/routes";
+import ThemeToggleButton from "./features/components/ThemeToggleButton";
 import "./Styles/global.css";
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
     <Router basename="/BaltaDev">
       <Navbar />
       <AppRoutes />
+      <ThemeToggleButton />
     </Router>
   );
 };
