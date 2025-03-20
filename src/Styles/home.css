@@ -1,0 +1,71 @@
+h-screen {
+  height: 100vh;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.home img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+.home p {
+    color: black;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  max-width: 800px; /* Controla el ancho del contenedor del texto */
+  line-height: 1.5; /* Ajusta la altura de línea para mejorar la legibilidad */
+}
+
+.home .buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.home .buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.home .buttons a:hover {
+  background-color: #d48957;
+}
+
+.home .buttons a svg {
+  margin-right: 10px; /* Agrega un margen entre el icono y el texto */
+}
+
+.home .buttons .secondary-btn {
+  background-color: #ff6600;
+}
+
+.home .buttons .secondary-btn:hover {
+  background-color: #d48957;
+}

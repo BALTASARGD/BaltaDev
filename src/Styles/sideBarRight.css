@@ -1,0 +1,74 @@
+.sidebar-right {
+  color: #ff6600;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  bottom: 0;
+  right: 0;
+  margin-right: 2rem;
+  height: 50vh;
+}
+
+.sidebar-right .icons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 4rem;
+}
+
+.sidebar-right .icon-link {
+  color: var(--orange);
+  margin-bottom: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.sidebar-right .icon-link:hover {
+  color: var(--lightblue);
+}
+
+.sidebar-right .icon {
+  font-size: 2rem;
+}
+
+.sidebar-right .email-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.sidebar-right .email-link {
+  color: var(--orange);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.sidebar-right .email-link:hover {
+  color: var(--lightblue);
+}
+
+.sidebar-right .line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 35%;
+}
+
+.sidebar-right .line {
+  width: 0.25rem;
+  height: 100%;
+  background-color: var(--lightblue);
+}
+
+/* Ocultar en pantallas pequeñas */
+@media (max-width: 1024px) {
+  .sidebar-right {
+    display: none;
+  }
+}
