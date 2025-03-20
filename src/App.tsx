@@ -5,7 +5,7 @@ import "./Styles/global.css";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/BaltaDev">
       <Navbar />
       <AppRoutes />
     </Router>
