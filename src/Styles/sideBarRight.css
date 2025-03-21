@@ -1,11 +1,12 @@
 .sidebar-right {
   color: #ff6600;
-  position: absolute;
+  position: fixed; /* Cambia a fixed para mantener la posición en todas las páginas */
   display: flex;
   align-items: center;
   flex-direction: column;
   bottom: 0;
   right: 0;
+  margin-bottom: 100px;
   margin-right: 2rem;
   height: 50vh;
 }

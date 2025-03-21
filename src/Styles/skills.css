@@ -1,24 +1,29 @@
 .skills {
   padding: 20px;
-  text-align: center;
+ 
 }
 
 .skills-title {
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #ff6600;
+  margin-left: 10px;
 }
 
 .skills-subtitle {
   font-size: 1.5rem;
-  margin: 20px 0;
+  margin-left: -300px;
   color: #ff6600;
 }
 
 .skills-container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-section {
+  margin-bottom: 40px;
 }
 
 .skills-grid {
@@ -38,11 +43,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 120px; /* Aumenta el tamaño del contenedor */
-  height: 120px; /* Aumenta el tamaño del contenedor */
+  width: 120px; /* Ajusta el tamaño del contenedor */
+  height: 120px; /* Ajusta el tamaño del contenedor */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 32px rgba(255, 102, 0, 0.7); /* Sombra luminosa naranja más ancha */
 }
 
 .skill-card img {
-  max-width: 70px; /* Aumenta el tamaño máximo del icono */
-  max-height: 70px; /* Aumenta el tamaño máximo del icono */
+  max-width: 70px; /* Ajusta el tamaño máximo del icono */
+  max-height: 70px; /* Ajusta el tamaño máximo del icono */
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode .skill-card {
+  background: #333; /* Fondo oscuro */
+  color: #fff; /* Texto claro */
+  border-color: #444; /* Borde oscuro */
 }

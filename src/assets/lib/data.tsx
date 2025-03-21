@@ -164,19 +164,3 @@ export const skillsDataWeb = [
     ],
   },
 ] as const;
-
-export const skillsDataDesign = [
-  {
-    skillsTitle: "Design",
-    skills: [
-      { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
-      {
-        title: "Adobe XD",
-        hash: "#Adobe XD",
-        icon: adobexdicon,
-        color: "#FF61F6",
-      },
-      { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
-    ],
-  },
-] as const;
