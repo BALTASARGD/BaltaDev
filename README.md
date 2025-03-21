@@ -8,10 +8,18 @@ BaltaDev/
 │   ├── main.tsx
 │   ├── Styles/
 │   │   ├── global.css
-│   │   └── navbar.css
+│   │   ├── navbar.css
+│   │   └── home.css
+│   ├── assets/
+│   │   ├── images/
+│   │   ├── icons/
+│   │   └── lib/
+│   │       └── data.tsx
 │   ├── features/
 │   │   ├── components/
-│   │   │   └── Navbar.tsx
+│   │   │   ├── Navbar.tsx
+│   │   │   ├── SideBarRight.tsx
+│   │   │   └── ThemeToggleButton.tsx
 │   │   ├── pages/
 │   │   │   ├── Contact.tsx
 │   │   │   ├── Home.tsx
@@ -19,5 +27,8 @@ BaltaDev/
 │   │   │   └── Skills.tsx
 │   │   └── routing/
 │   │       └── routes.tsx
-
+├── vite.config.ts
+├── public/
+│   └── Untitled-1.ini
+├── README.md
 ```
