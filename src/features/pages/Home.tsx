@@ -1,9 +1,9 @@
 import { lazy } from "react";
-import '../../Styles/home.css'; // Asegúrate de que esta ruta sea correcta
-import '../../Styles/sideBarRight.css'; // Importa los estilos del sidebar
-import { headerIntroData } from "../../assets/lib/data"; // Importa headerIntroData
+import '../../Styles/home.css';
+import '../../Styles/sideBarRight.css';
+import { headerIntroData } from "../../assets/lib/data";
 import React from "react";
-import logo from '../../assets/images/logo balta2.jpg'; // Asegúrate de que esta ruta sea correcta
+import logo from '../../assets/images/logo balta2.jpg';
 
 const LazySideBarRight = lazy(() => import("../components/SideBarRight"));
 

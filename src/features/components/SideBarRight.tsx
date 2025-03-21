@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { sideBarLeftSocials, sideBarRightMail } from "../../assets/lib/data";
 import React from "react";
-import "../../Styles/sideBarRight.css"; // Importa los estilos del sidebar
+import "../../Styles/sideBarRight.css";
 
 const SideBarRight: React.FC = () => {
   return (

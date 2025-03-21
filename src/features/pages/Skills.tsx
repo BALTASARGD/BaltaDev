@@ -1,6 +1,6 @@
 import React from "react";
 import "../../Styles/skills.css";
-import { skillsDataWeb } from "../../assets/lib/data"; // Importa solo skillsDataWeb
+import { skillsDataWeb } from "../../assets/lib/data";
 
 const Skills = () => {
   return (

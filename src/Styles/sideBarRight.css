@@ -1,6 +1,6 @@
 .sidebar-right {
   color: #ff6600;
-  position: fixed; /* Cambia a fixed para mantener la posición en todas las páginas */
+  position: fixed;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -67,7 +67,6 @@
   background-color: var(--lightblue);
 }
 
-/* Ocultar en pantallas pequeñas */
 @media (max-width: 1024px) {
   .sidebar-right {
     display: none;

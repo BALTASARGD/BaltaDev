@@ -64,7 +64,7 @@ export const headerIntroData = {
       color: "secondary-btn",
     },
   ],
-  profilepicture: "./src/assets/images/FotoPerfil.jpeg", // Asegúrate de que esta ruta sea correcta
+  profilepicture: "./src/assets/images/FotoPerfil.jpeg",
 } as const;
 
 export const skillsDataWeb = [
@@ -122,43 +122,43 @@ export const skillsDataWeb = [
       {
         title: "Git",
         hash: "#Git",
-        icon: "src/assets/icons/Git-Icon-1788C.svg", // Agregar el ícono correcto aquí
+        icon: "src/assets/icons/Git-Icon-1788C.svg",
         color: "#F05032",
       },
       {
         title: "Linux",
         hash: "#Linux",
-        icon: "src/assets/icons/Linux.svg", // Agregar el ícono correcto aquí
+        icon: "src/assets/icons/Linux.svg",
         color: "#FCC624",
       },
       {
         title: "GitHub",
         hash: "#GitHub",
-        icon: "src/assets/icons/github-color.svg", // Agregar el ícono correcto aquí
+        icon: "src/assets/icons/github-color.svg",
         color: "#181717",
       },
       {
         title: "Markdown",
         hash: "#Markdown",
-        icon: "src/assets/icons/markdown-svgrepo-com.svg", // Agregar el ícono correcto aquí
+        icon: "src/assets/icons/markdown-svgrepo-com.svg",
         color: "#000000",
       },
       {
         title: "Bootstrap",
         hash: "#Bootstrap",
-        icon: "src/assets/icons/free-bootstrap-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-language-pack-logos-icons-1175203.webp", // Agregar el ícono correcto aquí
+        icon: "src/assets/icons/free-bootstrap-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-language-pack-logos-icons-1175203.webp",
         color: "#7952B3",
       },
       {
         title: "Vite",
         hash: "#Vite",
-        icon: "src/assets/icons/vite.svg", // Agregar el ícono correcto aquí
+        icon: "src/assets/icons/vite.svg",
         color: "#646CFF",
       },
       {
         title: "Visual Studio Code",
         hash: "#Visual Studio Code",
-        icon: "src/assets/icons/Visual_Studio_Code_1.35_icon.svg.png", // Agregar el ícono correcto aquí
+        icon: "src/assets/icons/Visual_Studio_Code_1.35_icon.svg.png",
         color: "#007ACC",
       },
     ],
