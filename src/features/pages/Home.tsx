@@ -3,7 +3,6 @@ import '../../Styles/home.css';
 import '../../Styles/sideBarRight.css';
 import { headerIntroData } from "../../assets/lib/data";
 import React from "react";
-import logo from '../../assets/images/logo balta2.jpg';
 
 const LazySideBarRight = lazy(() => import("../components/SideBarRight"));
 
@@ -14,7 +13,6 @@ const Home = () => {
     <div>
       <LazySideBarRight />
       <div className="home">
-        <img src={logo} alt="Logo" className="home-logo" />
         <img src={profilepicture} alt="Profile" />
         <h1>{title.en}</h1>
         <h2>{subtitle}</h2>
