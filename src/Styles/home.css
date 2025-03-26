@@ -99,3 +99,69 @@ h-screen {
 .main-btn:hover {
   background-color: #e55d00;
 }
+
+.projects-carousel-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.projects-carousel {
+  display: flex;
+  overflow: hidden;
+  gap: 20px;
+  padding: 20px;
+  scroll-behavior: smooth;
+  flex: 1;
+}
+
+.project-card {
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 250px;
+  height: 350px; /* Aumenta la altura de las tarjetas */
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px; /* Aumenta la altura de las imágenes */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  color: #ff6600;
+}
+
+.carousel-arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #ff6600;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.carousel-arrow:hover {
+  color: #d48957;
+}
+
+.left-arrow {
+  margin-right: 10px;
+}
+
+.right-arrow {
+  margin-left: 10px;
+}
