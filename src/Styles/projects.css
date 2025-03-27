@@ -36,12 +36,15 @@
   flex: 0 0 auto;
   background: #fff;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
-  width: 250px;
-  height: 350px;
+  width: 400px; /* Incrementa ligeramente el ancho de la tarjeta */
+  height: 350px; /* Mantén la altura actual */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Asegura que el footer esté en la parte inferior */
 }
 
 .project-card:hover {
@@ -49,9 +52,13 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.project-footer {
+  margin-top: auto; /* Empuja el contenido hacia abajo */
+}
+
 .project-image {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -60,6 +67,23 @@
 .project-title {
   font-size: 1.2rem;
   color: #ff6600;
+  margin-bottom: 10px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.project-icon {
+  font-size: 1.5rem;
+  color: #ff6600;
+  transition: color 0.3s;
+}
+
+.project-icon:hover {
+  color: #e65c00;
 }
 
 .carousel-arrow {

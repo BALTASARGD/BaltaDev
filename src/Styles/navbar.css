@@ -6,8 +6,8 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%; /* Ocupa el 50% del ancho de la página */
-  margin: 40px auto 0 auto; /* Agrega un margen superior y centra la barra de navegación */
+  width: 50%;
+  margin: 40px auto 0 auto;
 }
 
 nav ul {
@@ -16,7 +16,7 @@ nav ul {
   justify-content: space-around;
   margin: 0;
   padding: 0;
-  width: 100%; /* Asegura que los elementos de la lista ocupen todo el ancho del nav */
+  width: 100%;
 }
 
 nav ul li {

@@ -1,41 +1,49 @@
 import React, { useState } from "react";
 import "../../Styles/projects.css";
+import { FiGithub, FiGlobe } from "react-icons/fi";
 
 const projects = [
   {
     name: "Cronómetro",
-    url: "https://github.com/BALTASARGD/Cronometro",
-    image: "/path/to/cronometro.jpg",
+    githubUrl: "https://github.com/BALTASARGD/Cronometro",
+    liveUrl: "https://cronometro-tan.vercel.app/",
+    backgroundImage: "src/assets/images/projects_img/MyConometer.png",
   },
   {
     name: "Tarjeta Mercedes Benz",
-    url: "https://github.com/BALTASARGD/Tarjeta-Mercedes-Benz",
-    image: "/path/to/tarjeta-mercedes.jpg",
+    githubUrl: "https://github.com/BALTASARGD/Tarjeta-Mercedes-Benz",
+    liveUrl: "https://tarjeta-mercedes-benz.vercel.app/",
+    backgroundImage: "src/assets/images/projects_img/MercedesBenzCard.png",
   },
   {
     name: "Weather App",
-    url: "https://github.com/BALTASARGD/WebDevCourse_SPA__Weather_App-",
-    image: "/path/to/weather-app.jpg",
+    githubUrl: "https://github.com/BALTASARGD/WebDevCourse_SPA__Weather_App-",
+    liveUrl: "https://weather-app.vercel.app",
+    backgroundImage: "src/assets/images/projects_img/WeatherApp.png",
   },
   {
     name: "Find Countries App",
-    url: "https://github.com/BALTASARGD/Dci_SPA_FindCountriesApp",
-    image: "/path/to/find-countries.jpg",
+    githubUrl: "https://github.com/BALTASARGD/Dci_SPA_FindCountriesApp",
+    liveUrl: "https://dci-spa-find-countries-app-witv.vercel.app/",
+    backgroundImage: "src/assets/images/projects_img/FindCountriesApp.png",
   },
   {
     name: "The Modern House",
-    url: "https://github.com/BALTASARGD/The-Modern-House",
-    image: "/path/to/modern-house.jpg",
+    githubUrl: "https://github.com/BALTASARGD/The-Modern-House",
+    liveUrl: "https://baltasargd.github.io/The-Modern-House/",
+    backgroundImage: "src/assets/images/projects_img/TheModernHouse.png",
   },
   {
     name: "To-Do List",
-    url: "https://github.com/BALTASARGD/To-Do-List",
-    image: "/path/to/to-do-list.jpg",
+    githubUrl: "https://github.com/BALTASARGD/To-Do-List",
+    liveUrl: "https://to-do-list-mauve-eta.vercel.app/",
+    backgroundImage: "src/assets/images/projects_img/ToDoList.png",
   },
   {
     name: "Portfolio BGD",
-    url: "https://github.com/BALTASARGD/PORTFOLIO-BGD",
-    image: "/path/to/portfolio-bgd.jpg",
+    githubUrl: "https://github.com/BALTASARGD/PORTFOLIO-BGD",
+    liveUrl: "https://portfolio-bgd.vercel.app/",
+    backgroundImage: "src/assets/images/projects_img/PortfolioBGD.png",
   },
 ];
 
@@ -57,18 +65,35 @@ const Projects = () => {
 
   return (
     <div className="projects">
-      <h1 className="projects-title">&lt;My Projects/&gt;</h1> {/* Usa la clase projects-title */}
+      <h1 className="projects-title">&lt;My Projects/&gt;</h1>
       <div className="projects-carousel-container">
         <button className="carousel-arrow left-arrow" onClick={handlePrev}>
           &#8249;
         </button>
         <div className="projects-carousel">
           {projects.slice(startIndex, startIndex + itemsToShow).map((project, index) => (
-            <div key={index} className="project-card">
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <img src={project.image} alt={project.name} className="project-image" />
+            <div
+              key={index}
+              className="project-card"
+              style={{
+                backgroundImage: project.backgroundImage
+                  ? `url(${project.backgroundImage})`
+                  : "none",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="project-footer">
                 <h2 className="project-title">{project.name}</h2>
-              </a>
+                <div className="project-links">
+                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-icon">
+                    <FiGithub />
+                  </a>
+                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="project-icon">
+                    <FiGlobe />
+                  </a>
+                </div>
+              </div>
             </div>
           ))}
         </div>
