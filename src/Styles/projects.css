@@ -2,49 +2,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px; /* Espacio superior para el título */
+  padding: 50px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
 }
 
 .projects-title {
-  font-size: 2.5rem;
-  color: #ff6600;
-  margin-bottom: 20px;
-  align-self: flex-start; /* Posiciona el título a la izquierda */
-  margin-left: 50px; /* Ajusta la distancia desde el borde izquierdo */
+  font-size: 3rem;
+  color: #cf1111;
+  margin-bottom: 30px;
+  margin-left: -1200px;
 }
 
-.projects-carousel-container {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Centra las tarjetas horizontalmente */
-  height: calc(100vh - 150px); /* Ajusta la altura para centrar las tarjetas verticalmente */
-  position: relative;
-  margin-top: -100px;
-  
-}
-
-.projects-carousel {
-  display: flex;
-  overflow: hidden;
-  gap: 20px;
-  padding: 20px;
-  scroll-behavior: smooth;
-  flex: 1;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 100px; 
+  padding: 20px; 
+  width: 100%;
+  max-width: 1200px;
 }
 
 .project-card {
-  flex: 0 0 auto;
-  background: #fff;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
   border-radius: 10px;
-  padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
-  width: 400px; /* Incrementa ligeramente el ancho de la tarjeta */
-  height: 350px; /* Mantén la altura actual */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; /* Asegura que el footer esté en la parte inferior */
 }
 
 .project-card:hover {
@@ -52,57 +37,55 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.project-footer {
-  margin-top: auto; /* Empuja el contenido hacia abajo */
-}
-
 .project-image {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
 }
 
 .project-title {
-  font-size: 1.2rem;
-  color: #ff6600;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
   margin-bottom: 10px;
 }
 
-.project-links {
+.project-tags {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
-  gap: 15px;
 }
 
-.project-icon {
-  font-size: 1.5rem;
-  color: #ff6600;
-  transition: color 0.3s;
-}
-
-.project-icon:hover {
-  color: #e65c00;
-}
-
-.carousel-arrow {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: #ff6600;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.carousel-arrow:hover {
-  color: #d48957;
-}
-
-.left-arrow {
-  margin-right: 10px;
-}
-
-.right-arrow {
-  margin-left: 10px;
+.project-tag {
+  background-color: #ff6600;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
 }

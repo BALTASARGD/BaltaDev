@@ -1,33 +1,47 @@
-import { lazy } from "react";
-import '../../Styles/home.css';
-import '../../Styles/sideBarRight.css';
-import { headerIntroData } from "../../assets/lib/data";
 import React from "react";
-
-const LazySideBarRight = lazy(() => import("../components/SideBarRight"));
+import "../../Styles/home.css";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 const Home = () => {
-  const { title, subtitle, description, buttons, profilepicture } = headerIntroData;
-
   return (
-    <div>
-      <LazySideBarRight />
-      <div className="home">
-        <img src={profilepicture} alt="Profile" />
-        <h1>{title.en}</h1>
-        <h2>{subtitle}</h2>
-        <p>{description.en}</p>
-        <div className="buttons">
-          <a href="mailto:baltakoeln@icloud.com" className="main-btn">
-            {React.createElement(buttons[0].icon)}
-            {buttons[0].label.en}
+    <div className="home">
+      <div className="home-content">
+        <p className="home-intro">Hello World, I'm</p>
+        <h1 className="home-name">
+          Baltasar <span className="home-lastname">Garcia</span>
+        </h1>
+        <p className="home-subtitle">a Junior Web Developer based in Germany.</p>
+        <p className="home-description">
+          I have a strong interest in creating dynamic, responsive, and user-friendly websites. 
+          My journey into web development started with a curiosity about how websites function, 
+          evolving into a passion for coding and design.
+        </p>
+        <div className="home-icons">
+          <a href="https://github.com/BALTASARGD" target="_blank" rel="noopener noreferrer">
+            <FiGithub />
           </a>
-          <a href="https://github.com/BALTASARGD" className="main-btn" target="_blank" rel="noopener noreferrer">
-            {React.createElement(buttons[1].icon)}
-            {buttons[1].label.en}
+          <a href="https://www.linkedin.com/in/Baltademonio/" target="_blank" rel="noopener noreferrer">
+            <FiLinkedin />
+          </a>
+          <a href="mailto:baltakoeln@icloud.com" target="_blank" rel="noopener noreferrer">
+            <FiMail />
           </a>
         </div>
       </div>
+      <footer className="home-footer">
+        <p>©2024-2025 Baltasar Garcia</p>
+        <div className="home-footer-options">
+          <label>
+            <input type="checkbox" /> Light
+          </label>
+          <label>
+            <input type="checkbox" /> Dark
+          </label>
+          <label>
+            <input type="checkbox" /> Sans-serif
+          </label>
+        </div>
+      </footer>
     </div>
   );
 };

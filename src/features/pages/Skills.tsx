@@ -1,22 +1,44 @@
 import React from "react";
 import "../../Styles/skills.css";
-import { skillsDataWeb } from "../../assets/lib/data";
+
+const skills = [
+  { name: "HTML", icon: "src/assets/icons/htmlicon.svg", color: "#F1662A" },
+  { name: "CSS", icon: "src/assets/icons/cssicon.svg", color: "#1572B6" },
+  { name: "JavaScript", icon: "src/assets/icons/javascripticon.svg", color: "#F7DF1E" },
+  { name: "React", icon: "src/assets/icons/reacticon.svg", color: "#61DAFB" },
+  { name: "Node.js", icon: "src/assets/icons/nodejsicon.svg", color: "#339933" },
+  { name: "Git", icon: "src/assets/icons/Git-Icon-1788C.svg", color: "#F05032" },
+  { name: "GitHub", icon: "src/assets/icons/github-color.svg", color: "#181717" },
+  { name: "SASS", icon: "src/assets/icons/sassicon.svg", color: "#CC6699" },
+  { name: "Responsive", icon: "src/assets/icons/responsive-design.png", color: "#38B2AC" },
+  { name: "Terminal", icon: "src/assets/icons/terminal-svgrepo-com.svg", color: "#000000" },
+  { name: "Tailwind", icon: "src/assets/icons/tailwindicon.svg", color: "#38B2AC" },
+];
 
 const Skills = () => {
   return (
     <div className="skills">
-      <h1 className="skills-title">&lt;Skills/&gt;</h1>
-      <div className="skills-container">
-        <div className="skills-section">
-          <h2 className="skills-subtitle">&lt;WebDevelopment/&gt;</h2>
-          <div className="skills-grid">
-            {skillsDataWeb[0].skills.map((skill, index) => (
-              <div key={index} className="skill-card" style={{ borderColor: skill.color }}>
-                <img src={skill.icon} alt={skill.title} />
-              </div>
-            ))}
+      <div className="skills-header">
+        <h1 className="skills-title">
+          <span className="skills-title-highlight">My</span> skills
+        </h1>
+      </div>
+      <div className="skills-row">
+        {skills.map((skill, index) => (
+          <div
+            key={index}
+            className="skill-icon-container"
+            style={{ animationDelay: `${index * 2}s` }}
+          >
+            <img
+              src={skill.icon}
+              alt={skill.name}
+              className="skill-icon"
+              style={{ color: skill.color }}
+            />
+            <p className="skill-name">{skill.name}</p>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
