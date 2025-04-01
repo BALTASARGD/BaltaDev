@@ -7,22 +7,22 @@ const Navbar = () => {
       <ul className="navbar-list">
         <li className="navbar-item">
           <NavLink to="/" className={({ isActive }) => (isActive ? "navbar-link active" : "navbar-link")}>
-            About
+            ABOUT
           </NavLink>
         </li>
         <li className="navbar-item">
           <NavLink to="/skills" className={({ isActive }) => (isActive ? "navbar-link active" : "navbar-link")}>
-            Skills
+            SKILLS
           </NavLink>
         </li>
         <li className="navbar-item">
           <NavLink to="/projects" className={({ isActive }) => (isActive ? "navbar-link active" : "navbar-link")}>
-            Works
+            WORKS
           </NavLink>
         </li>
         <li className="navbar-item">
           <NavLink to="/contact" className={({ isActive }) => (isActive ? "navbar-link active" : "navbar-link")}>
-            Contact
+            CONTACT
           </NavLink>
         </li>
       </ul>
