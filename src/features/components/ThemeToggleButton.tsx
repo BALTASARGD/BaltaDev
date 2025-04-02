@@ -1,25 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { FiSun, FiMoon } from 'react-icons/fi';
-import '../../Styles/themeToggleButton.css';
+import React, { useState } from "react";
+import { FiSun, FiMoon } from "react-icons/fi";
+import "../../Styles/themeToggleButton.css";
 
 const ThemeToggleButton: React.FC = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  useEffect(() => {
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme === 'dark') {
-      document.body.classList.add('dark-mode');
-      setIsDarkMode(true);
-    }
-  }, []);
+  const [isDarkMode, setIsDarkMode] = useState(() => localStorage.getItem("theme") === "dark");
 
   const toggleTheme = () => {
     if (isDarkMode) {
-      document.body.classList.remove('dark-mode');
-      localStorage.setItem('theme', 'light');
+      document.body.classList.remove("dark-mode");
+      localStorage.setItem("theme", "light");
     } else {
-      document.body.classList.add('dark-mode');
-      localStorage.setItem('theme', 'dark');
+      document.body.classList.add("dark-mode");
+      localStorage.setItem("theme", "dark");
     }
     setIsDarkMode(!isDarkMode);
   };
