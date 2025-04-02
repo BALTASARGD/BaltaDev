@@ -39,22 +39,28 @@
 .projects-title-works {
   color: #ff6600; /* Naranja */
 }
+.projects-subtitle{
+  font-size: 2rem;
+  color:black;
+  margin-left: 1200px;
+  text-align: center;
+  line-height: 1.6;
+}
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 60px;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .project-card {
-  margin-top: 100px;
+  margin-top: 50px;
   position: relative;
   overflow: hidden;
   height: 200px;
-  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }

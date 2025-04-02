@@ -25,6 +25,10 @@ const Skills = () => {
         <h1 className="skills-title">
           <span className="skills-title-my">My</span> <span className="skills-title-skills">Skills</span>
         </h1>
+        <p className="projects-subtitle">
+          Discover the skills that shape my journey as a web developer. Each technology and tool I’ve mastered reflects
+          my commitment to creating high-quality, innovative solutions.
+        </p>
       </div>
       <div className="skills-row">
         {skillsRow1.map((skill, index) => (

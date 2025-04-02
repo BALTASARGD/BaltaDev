@@ -47,6 +47,10 @@ const Projects = () => {
         <h1 className="projects-title">
           <span className="projects-title-my">My</span> <span className="projects-title-works">Works</span>
         </h1>
+        <p className="projects-subtitle">
+          Explore my portfolio to see examples of my work that demonstrate my skills and dedication to web development.
+          Each project represents a milestone in my journey as a developer.
+        </p>
       </div>
       <div className="projects-grid">
         {projects.map((project, index) => (

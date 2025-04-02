@@ -13,7 +13,7 @@ const Home = () => {
         <p className="home-subtitle">a Junior Web Developer based in Germany.</p>
         <p className="home-description">
           I have a strong interest in creating dynamic, responsive, and user-friendly websites. 
-          My journey into web development <br /> started with a curiosity about how websites function, 
+          My journey into web development  started with a curiosity about how websites function, 
           evolving into a passion for coding and design.
         </p>
         <div className="home-icons">
