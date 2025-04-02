@@ -47,3 +47,21 @@
   color: #ff6600;
   border-bottom: 2px solid #ff6600;
 }
+/*el navbar en el modo oscuro tendra colores azul y blanco
+y el hover sera de color blanco*/
+body.dark-mode .navbar {
+  
+}
+
+body.dark-mode .navbar-link {
+  color: #1052e2e8;
+}
+
+body.dark-mode .navbar-link:hover {
+  color: #ccc;
+}
+
+body.dark-mode .navbar-link.active {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}

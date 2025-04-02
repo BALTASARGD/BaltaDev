@@ -72,6 +72,26 @@
   height: 100%;
   background-color: #ff6600;
 }
+body.dark-mode .sidebar-right .icon-link {
+  color: #1052e2e8;
+}
+
+body.dark-mode .sidebar-right .icon-link:hover {
+  color: #4a6db1e8;
+}
+body.dark-mode .sidebar-right .email-link {
+  color: #1052e2e8;
+}
+
+body.dark-mode .sidebar-right .email-link:hover {
+  color: #4a6db1e8;
+}
+
+body.dark-mode .sidebar-right .line {
+  background-color: #1052e2e8;
+}
+
+
 
 @media (max-width: 1024px) {
   .sidebar-right {

@@ -1,40 +1,14 @@
-.theme-toggle-button {
-  color:#ff6600 ;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #fff;
-  border: none;
-  border-radius: 50%;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
 
-.theme-toggle-button:hover {
-  background-color: #f0f0f0;
-}
-
-.theme-toggle-button svg {
-    margin-right: 1rem;
-  font-size: 2rem; 
-  color: #ff6600 ;
-}
 
 body.dark-mode {
-  background-color: #1a1a1a;
+  background-color: #01010c;
   color: #fff;
 }
 
-body.dark-mode .theme-toggle-button {
-  background-color: #333;
-  color: #fff;
+body.dark-mode .sidebar-right .icon-link {
+  color: #1052e2e8;
 }
 
-body.dark-mode .theme-toggle-button:hover {
-  background-color: #444;
-}
 
 .theme-toggle-icon {
   position: fixed;
@@ -51,9 +25,32 @@ body.dark-mode .theme-toggle-button:hover {
 }
 
 body.dark-mode .theme-toggle-icon {
-  color: #fff;
+  color: #1052e2e8;
 }
 
 body.dark-mode .theme-toggle-icon:hover {
   color: #ccc;
+}
+/*en dark mode cambiar cambiar los titulos a color blanco*/
+body.dark-mode .home-intro {
+  color: #fff;
+}
+body.dark-mode .home-name {
+  color: #fff;
+}
+
+body.dark-mode .home-lastname {
+  color: #1052e2e8;
+}
+
+body.dark-mode .home-subtitle {
+  color: #ccc;
+}
+
+body.dark-mode .home-description {
+  color: #aaa;
+}
+
+body.dark-mode .cv-download {
+  color: #1052e2e8;
 }
