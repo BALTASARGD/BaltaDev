@@ -1,5 +1,4 @@
 .sidebar-right {
-  color: #ff6600;
   position: fixed;
   display: flex;
   align-items: center;
@@ -9,6 +8,7 @@
   margin-bottom: 100px;
   margin-right: 2rem;
   height: 50vh;
+  z-index: 1000; /* Asegúrate de que los enlaces estén por encima de otros elementos */
 }
 
 .sidebar-right .icons-container {
@@ -16,18 +16,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: -155px;
   height: 50%;
   width: 4rem;
 }
 
 .sidebar-right .icon-link {
-  color: var(--orange);
+  color: #ff6600;
   margin-bottom: 1rem;
   transition: color 0.2s ease-in-out;
+  text-decoration: none; /* Asegúrate de que los enlaces no tengan subrayado */
 }
 
 .sidebar-right .icon-link:hover {
-  color: var(--lightblue);
+  color: #000000;
 }
 
 .sidebar-right .icon {
@@ -38,19 +40,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 90px;
+  margin-top: 20px;
   height: 15%;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
 
 .sidebar-right .email-link {
-  color: var(--orange);
+  color: #ff6600;
   text-decoration: none;
+  font-weight: bold;
   transition: color 0.2s ease-in-out;
 }
 
 .sidebar-right .email-link:hover {
-  color: var(--lightblue);
+  color: #000000;
 }
 
 .sidebar-right .line-container {
@@ -58,13 +63,14 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 35%;
+  margin-bottom: 10px;
+  height: 55%;
 }
 
 .sidebar-right .line {
   width: 0.25rem;
   height: 100%;
-  background-color: var(--lightblue);
+  background-color: #ff6600;
 }
 
 @media (max-width: 1024px) {
