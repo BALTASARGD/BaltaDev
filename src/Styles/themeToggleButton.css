@@ -35,3 +35,25 @@ body.dark-mode .theme-toggle-button {
 body.dark-mode .theme-toggle-button:hover {
   background-color: #444;
 }
+
+.theme-toggle-icon {
+  position: fixed;
+  bottom: 40px;
+  right: 45px;
+  font-size: 2.5rem; /* Tamaño del ícono */
+  color: #ff6600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.theme-toggle-icon:hover {
+  color: #e65c00;
+}
+
+body.dark-mode .theme-toggle-icon {
+  color: #fff;
+}
+
+body.dark-mode .theme-toggle-icon:hover {
+  color: #ccc;
+}

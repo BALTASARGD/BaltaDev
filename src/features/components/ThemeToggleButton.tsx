@@ -17,9 +17,9 @@ const ThemeToggleButton: React.FC = () => {
   };
 
   return (
-    <button className="theme-toggle-button" onClick={toggleTheme}>
+    <div className="theme-toggle-icon" onClick={toggleTheme}>
       {isDarkMode ? <FiSun /> : <FiMoon />}
-    </button>
+    </div>
   );
 };
 
