@@ -51,7 +51,7 @@ margin-left: 1200px;
   transform: scale(0.5) translateY(0); /* Comienza más pequeño en el centro de la línea */
   transform-origin: center; /* Asegura que la transformación ocurra desde el centro */
   animation: fadeInGrow 3s ease-out forwards; /* Animación más suave */
-  margin-top: 80px;
+  margin-top: 10px;
    /* Añade espacio debajo del título */
 }
 
@@ -61,11 +61,13 @@ margin-left: 1200px;
   gap: 60px;
   width: 100%;
   max-width: 1200px;
-  margin: 10px auto;
+  margin: 0 auto;
+ 
+  
 }
 
 .project-card {
-  margin-top: 50px;
+  margin-top: 20px;
   position: relative;
   overflow: hidden;
   height: 200px;
@@ -151,17 +153,17 @@ margin-left: 1200px;
 @keyframes fadeInGrow {
   0% {
     opacity: 0;
-    transform: scale(0.5) translateY(0); /* Comienza pequeño en el centro */
+    transform: scale(0.1) translateY(0); /* Comienza pequeño en el centro */
     color:white;
   }
   50% {
     opacity: 0.7;
-    transform: scale(1.1) translateY(0); /* Se agranda ligeramente */
+    transform: scale(0.5) translateY(0); /* Se agranda ligeramente */
     color: whitesmoke; /* Negro */
   }
   100% {
     opacity: 1;
-    transform: scale(1) translateY(0); /* Tamaño normal */
+    transform: scale(0.8) translateY(0); /* Tamaño normal */
     color: #1052e2e8; /* Naranja */
   }
 }

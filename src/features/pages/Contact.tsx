@@ -12,7 +12,7 @@ const Contact = () => {
       </div>
       <div className="contact-content">
         <p className="contact-description">
-          Feel free to reach out to me for any inquiries\nor collaborations!
+          Feel free to reach out to me for any inquiries or collaborations!
         </p>
         <p className="contact-invite">Let's build something amazing together.</p>
         <div className="contact-icons">

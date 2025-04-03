@@ -21,7 +21,7 @@
 }
 
 .skills-header {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   margin-left: -1220px;
 }
 
@@ -43,7 +43,7 @@
 .skills-title-highlight {
   font-family: "Cursive", serif;
   font-size: 5rem;
-  color: #000;
+
 }
 
 .skills-subtitle {
@@ -134,17 +134,13 @@ margin-right: -200px;
 @keyframes fadeInGrow {
   0% {
     opacity: 0;
-    transform: scale(0.5) translateY(0); /* Comienza pequeño en el centro */
+    transform: scale(0.2) translateY(0); /* Comienza pequeño en el centro */
     color: rgb(255, 255, 255);
   }
-  50% {
-    opacity: 0.7;
-    transform: scale(1.1) translateY(0); /* Se agranda ligeramente */
-    color: var(--secondary-color); /* Negro */
-  }
+ 
   100% {
     opacity: 1;
-    transform: scale(1) translateY(0); /* Tamaño normal */
+    transform: scale(0.5) translateY(0); /* Tamaño normal */
     color: var(--primary-color); /* Naranja */
   }
 }
