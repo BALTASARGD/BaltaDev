@@ -115,3 +115,59 @@
 .contact-info {
   font-family: "Atma", system-ui; /* Aplicar la fuente */
 }
+
+/* Estilo para la flecha en modo claro */
+.contact-arrow {
+  position: fixed;
+  top: 50%;
+  left: 50%; /* Comienza en el centro de la pantalla */
+  font-size: 5rem; /* Tamaño grande */
+  color: #ff6600; /* Color naranja para el modo claro */
+  text-shadow: 0 0 10px #ff6600, 0 0 20px #ff6600, 0 0 30px #ff6600; /* Sombra inicial */
+  opacity: 0; /* Comienza invisible */
+  animation: moveToEmailLink 2.5s ease-in-out forwards, blinkAndRemoveShadow 2s ease-in-out 2.5s forwards; /* Animaciones combinadas */
+  animation-delay: 1.5s; /* Comienza a la mitad de la animación existente */
+  z-index: 1000;
+  transform: translate(-50%, -50%); /* Centra la flecha */
+  filter: drop-shadow(0 0 10px #ff6600); /* Rastro inicial */
+}
+
+/* Estilo para la flecha en modo oscuro */
+body.dark-mode .contact-arrow {
+  color: #fff; /* Color blanco para el modo oscuro */
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff; /* Sombra inicial */
+  filter: drop-shadow(0 0 10px #fff); /* Rastro inicial */
+}
+
+/* Animación para mover la flecha hacia el email-link */
+@keyframes moveToEmailLink {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1); /* Comienza en el centro */
+    filter: drop-shadow(0 0 10px currentColor); /* Rastro inicial */
+  }
+  100% {
+    opacity: 1;
+    transform: translate(800px, -50%) scale(1); /* Llega al email-link */
+    filter: drop-shadow(0 0 30px currentColor); /* Rastro final */
+  }
+}
+
+/* Animación para parpadear y eliminar la sombra al final */
+@keyframes blinkAndRemoveShadow {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 15px currentColor, 0 0 25px currentColor, 0 0 35px currentColor; /* Sombra inicial */
+    filter: drop-shadow(0 0 15px currentColor);
+  }
+  50% {
+    opacity: 0.5;
+    text-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor; /* Sombra reducida */
+    filter: drop-shadow(0 0 5px currentColor);
+  }
+  100% {
+    opacity: 1; /* Mantiene la opacidad */
+    text-shadow: none; /* Elimina la sombra */
+    filter: none; /* Elimina el rastro */
+  }
+}

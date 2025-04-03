@@ -20,6 +20,8 @@ const Contact = () => {
         </div>
         <p className="contact-thankyou">Thank you for visiting my portfolio!</p>
       </div>
+      {/* Flecha apuntando al SideBarRight */}
+      <div className="contact-arrow">➡</div>
     </div>
   );
 };
