@@ -152,17 +152,17 @@ margin-left: 1200px;
   0% {
     opacity: 0;
     transform: scale(0.5) translateY(0); /* Comienza pequeño en el centro */
-    color: black;
+    color:white;
   }
   50% {
     opacity: 0.7;
     transform: scale(1.1) translateY(0); /* Se agranda ligeramente */
-    color: var(--secondary-color); /* Negro */
+    color: whitesmoke; /* Negro */
   }
   100% {
     opacity: 1;
     transform: scale(1) translateY(0); /* Tamaño normal */
-    color: var(--primary-color); /* Naranja */
+    color: #1052e2e8; /* Naranja */
   }
 }
 
