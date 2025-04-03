@@ -138,15 +138,11 @@ body.dark-mode .contact-thankyou {
 /* Animación para el modo oscuro */
 @keyframes fadeInGrowDark {
   0% {
-    opacity: 0;
-    transform: scale(0.5) translateY(0); /* Comienza pequeño */
+    opacity: 0.5;
+    transform: scale(0) translateY(0); /* Comienza pequeño */
     color: #fff; /* Blanco */
   }
-  50% {
-    opacity: 0.7;
-    transform: scale(1.1) translateY(0); /* Se agranda ligeramente */
-    color: var(--secondary-color); /* Gris */
-  }
+
   100% {
     opacity: 1;
     transform: scale(1) translateY(0); /* Tamaño normal */
