@@ -2,15 +2,13 @@ import React from "react";
 import "../../Styles/projects.css";
 import { projectsData } from "../../assets/lib/data";
 import ProjectCard from "../components/ProjectCard";
+import SectionTitle from "../components/SectionTitle";
 
 const Projects = () => {
   return (
     <div className="projects">
       <div className="projects-header">
-        <h1 className="projects-title">
-          <span className="projects-title-my">My</span>{" "}
-          <span className="projects-title-works">Works</span>
-        </h1>
+        <SectionTitle mainText="My" highlightText="Works" />
         <p className="projects-subtitle">
           Explore my portfolio to see examples of my work that demonstrate my skills and dedication to web development. <br /> Each project represents a milestone in my journey as a developer.
         </p>

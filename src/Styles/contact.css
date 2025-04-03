@@ -28,10 +28,7 @@
 }
 
 .contact-title {
-  font-size: 4rem; /* Igual que en Skills y Projects */
-  font-weight: bold;
-  text-align: center;
-  line-height: 1.2;
+  /* Usa los estilos globales de .section-title */
 }
 
 .contact-title-my {
@@ -55,11 +52,9 @@
   font-family: "Atma", system-ui;
   opacity: 0; /* Comienza invisible */
   transform: scale(0.5) translateY(-50%); /* Comienza más pequeño y desplazado */
-  animation: fadeInGrow 2s ease-in-out forwards; /* Animación */
+  animation: fadeInGrow 2s ease-in-out forwards; /* Usa la animación global */
   height: 3rem; /* Fija la altura del contenedor */
 }
-
-
 
 @keyframes fadeInGrow {
   0% {
@@ -78,10 +73,7 @@
     color: var(--primary-color); /* Naranja */
   }
 }
-.contact-invite {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 60px;}
+
 .contact-invite {
   font-size: 1.5rem;
   font-weight: bold;
@@ -116,7 +108,7 @@
   font-family: "Atma", system-ui; /* Aplicar la fuente */
 }
 
-/* Estilo para la flecha en modo claro */
+/* Estilo para la flecha */
 .contact-arrow {
   position: fixed;
   top: 50%;
@@ -126,7 +118,7 @@
   text-shadow: 0 0 10px #ff6600, 0 0 20px #ff6600, 0 0 30px #ff6600; /* Sombra inicial */
   opacity: 0; /* Comienza invisible */
   animation: moveToEmailLink 2.5s ease-in-out forwards, blinkAndRemoveShadow 2s ease-in-out 2.5s forwards; /* Animaciones combinadas */
-  animation-delay: 1.5s; /* Comienza a la mitad de la animación existente */
+  animation-delay: 1.25s; /* Comienza a la mitad de la animación existente */
   z-index: 1000;
   transform: translate(-50%, -50%); /* Centra la flecha */
   filter: drop-shadow(0 0 10px #ff6600); /* Rastro inicial */

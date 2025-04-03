@@ -1,14 +1,12 @@
 import React from "react";
 import "../../Styles/contact.css";
+import SectionTitle from "../components/SectionTitle";
 
 const Contact = () => {
   return (
     <div className="contact">
       <div className="contact-header">
-        <h1 className="contact-title">
-          <span className="contact-title-my">My</span>{" "}
-          <span className="contact-title-contact">Contact</span>
-        </h1>
+        <SectionTitle mainText="My" highlightText="Contact" />
       </div>
       <div className="contact-content">
         <p className="contact-description">
@@ -20,7 +18,6 @@ const Contact = () => {
         </div>
         <p className="contact-thankyou">Thank you for visiting my portfolio!</p>
       </div>
-      {/* Flecha apuntando al SideBarRight */}
       <div className="contact-arrow">➡</div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import "../../Styles/home.css";
-import { FiDownload } from "react-icons/fi";
+import DownloadButton from "../components/DownloadButton";
 
 const Home = () => {
   return (
@@ -17,9 +17,7 @@ const Home = () => {
           evolving into a passion for coding and design.
         </p>
         <div className="home-icons">
-          <a href="/BaltaDev/assets/CV_BaltasarGarcia.pdf" download className="cv-download">
-            <FiDownload /> Download My CV!
-          </a>
+          <DownloadButton href="/BaltaDev/assets/CV_BaltasarGarcia.pdf" text="Download My CV!" />
         </div>
       </div>
       <footer className="home-footer">

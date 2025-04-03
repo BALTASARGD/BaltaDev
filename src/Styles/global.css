@@ -37,19 +37,24 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+/* Estilos comunes para enlaces */
 a {
   color: #ff6600;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
   text-decoration: underline;
+  color: #e65c00;
 }
 
+/* Estilos comunes para contenedores */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 button {
@@ -71,7 +76,7 @@ section {
   box-sizing: border-box;
 }
 
-/* Animación para el modo claro */
+/* Animación común */
 @keyframes fadeInGrow {
   0% {
     opacity: 0;
@@ -88,4 +93,20 @@ section {
     transform: scale(1) translateY(0); /* Tamaño normal */
     color: #ff6600; /* Naranja */
   }
+}
+
+/* Estilos comunes para títulos */
+.section-title {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.section-title-main {
+  color: #000; /* Negro */
+}
+
+.section-title-highlight {
+  color: #ff6600; /* Naranja */
 }

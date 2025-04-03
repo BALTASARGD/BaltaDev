@@ -26,6 +26,7 @@ const SideBarRight: React.FC = () => {
       <div className="line-container">
         <div className="line"></div>
       </div>
+      <div className="darkmode-line"></div>
     </div>
   );
 };
