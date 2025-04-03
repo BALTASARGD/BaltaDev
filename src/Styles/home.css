@@ -91,11 +91,11 @@
 
 .home-footer {
   position: absolute;
-  bottom: 20px;
+  bottom: 90px;
   left: 20px;
   writing-mode: vertical-rl;
   text-align: center;
   font-size: 0.9rem;
-  color: #666;
+  color:#ff6600;
   transform: rotate(180deg);
 }

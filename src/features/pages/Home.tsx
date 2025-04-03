@@ -21,7 +21,7 @@ const Home = () => {
         </div>
       </div>
       <footer className="home-footer">
-        <p>©2025 Balta García</p>
+        <p>©2025 Baltasar García Dávila</p>
       </footer>
     </div>
   );
