@@ -1,7 +1,7 @@
 
 
 body.dark-mode {
-  background-color: #01010c;
+  background-color: #151544;
   color: #fff;
 }
 
@@ -29,7 +29,7 @@ body.dark-mode .theme-toggle-icon {
 }
 
 body.dark-mode .theme-toggle-icon:hover {
-  color: #ccc;
+  color: #ffffff;
 }
 /*en dark mode cambiar cambiar los titulos a color blanco*/
 body.dark-mode .home-intro {
@@ -53,4 +53,8 @@ body.dark-mode .home-description {
 
 body.dark-mode .cv-download {
   color: #1052e2e8;
+}
+
+body.dark-mode .cv-download:hover {
+  color: #969dace8;
 }
