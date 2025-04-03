@@ -55,14 +55,6 @@ body.dark-mode .home-description {
   color: #aaa;
 }
 
-body.dark-mode .cv-download {
-  color: #1052e2e8;
-}
-
-body.dark-mode .cv-download:hover {
-  color: #969dace8;
-}
-
 /* Projects */
 body.dark-mode .projects-title-my {
   color: #fff;

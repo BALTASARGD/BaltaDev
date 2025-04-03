@@ -12,9 +12,7 @@ const Projects = () => {
           <span className="projects-title-works">Works</span>
         </h1>
         <p className="projects-subtitle">
-          Explore my portfolio to see examples of my work that demonstrate my
-          skills and dedication to web development. Each project represents a
-          milestone in my journey as a developer.
+          Explore my portfolio to see examples of my work\nthat demonstrate my skills and dedication to web development.
         </p>
       </div>
       <div className="projects-grid">
@@ -23,6 +21,7 @@ const Projects = () => {
             key={index}
             name={project.name}
             url={project.url}
+            githubUrl={project.githubUrl}
             image={project.image}
             tags={project.tags}
           />

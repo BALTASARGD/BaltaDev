@@ -1,13 +1,15 @@
 import React from "react";
+import { FiGlobe, FiGithub } from "react-icons/fi";
 
 interface ProjectCardProps {
   name: string;
   url: string;
   image: string;
   tags: string[];
+  githubUrl: string; // Enlace al repositorio
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ name, url, image, tags }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ name, url, image, tags, githubUrl }) => {
   return (
     <div className="project-card">
       <a href={url} target="_blank" rel="noopener noreferrer">
@@ -20,6 +22,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ name, url, image, tags }) => 
                 {tag}
               </span>
             ))}
+          </div>
+          <div className="project-icons">
+            <a href={url} target="_blank" rel="noopener noreferrer" className="project-icon-link">
+              <FiGlobe className="project-icon" /> {/* Ícono de bola del mundo */}
+            </a>
+            <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="project-icon-link">
+              <FiGithub className="project-icon" /> {/* Ícono para el repositorio de GitHub */}
+            </a>
           </div>
         </div>
       </a>

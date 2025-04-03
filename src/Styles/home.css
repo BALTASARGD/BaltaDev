@@ -73,7 +73,14 @@
   margin-top: 80px;
 }
 
-
+/* Asegúrate de que no haya font-family específica */
+.home-intro,
+.home-name,
+.home-lastname,
+.home-subtitle,
+.home-description {
+  font-family: "Atma", system-ui; /* Aplicar la fuente */
+}
 
 .cv-download {
   font-size: 20px;

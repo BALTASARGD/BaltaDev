@@ -4,7 +4,7 @@
   padding: 50px;
   box-sizing: border-box;
   color: #333;
-  font-family: Arial, sans-serif;
+  
 }
 
 .contact::before {
@@ -24,6 +24,7 @@
 .contact-header {
   margin-bottom: 30px;
   margin-left: -1220px; /* Igual que en Skills y Projects */
+  font-family: "Atma", system-ui; /* Aplicar la fuente */
 }
 
 .contact-title {
@@ -34,7 +35,7 @@
 }
 
 .contact-title-my {
-  font-family: "Cursive";
+  font-family: "Atma", Cursive;
   color: #000; /* Negro */
 }
 
@@ -51,8 +52,36 @@
   font-size: 2rem;
   color: black;
   margin-bottom: 20px;
+  font-family: "Atma", system-ui;
+  opacity: 0; /* Comienza invisible */
+  transform: scale(0.5) translateY(-50%); /* Comienza más pequeño y desplazado */
+  animation: fadeInGrow 2s ease-in-out forwards; /* Animación */
+  height: 3rem; /* Fija la altura del contenedor */
 }
 
+
+
+@keyframes fadeInGrow {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(-10%);
+    color: black;
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1) translateY(0);
+    color: var(--secondary-color); /* Negro */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    color: var(--primary-color); /* Naranja */
+  }
+}
+.contact-invite {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 60px;}
 .contact-invite {
   font-size: 1.5rem;
   font-weight: bold;
@@ -78,6 +107,11 @@
 
 .contact-thankyou {
   font-size: 1.5rem;
-  color:#ff6600;
+  color: #ff6600;
   margin-top: 20px;
+}
+
+.contact-form,
+.contact-info {
+  font-family: "Atma", system-ui; /* Aplicar la fuente */
 }
