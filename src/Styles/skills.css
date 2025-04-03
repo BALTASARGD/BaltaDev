@@ -119,13 +119,6 @@
   font-weight: bold;
   color: #333;
   text-align: center;
-  
-}
-
-body.dark-mode .skill-card {
-  background: #333;
-  color: #fff;
-  border-color: #444;
 }
 
 /* Animación para encender los íconos */

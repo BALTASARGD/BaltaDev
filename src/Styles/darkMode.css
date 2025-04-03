@@ -1,0 +1,105 @@
+/* Estilos generales para el modo oscuro */
+body.dark-mode {
+  background-color: #151544;
+  color: #fff;
+}
+
+/* SidebarRight */
+body.dark-mode .sidebar-right .icon-link {
+  color: #059bf1e8;
+}
+
+body.dark-mode .sidebar-right .icon-link:hover {
+  color: #ffffffe8;
+}
+
+body.dark-mode .sidebar-right .email-link {
+  color: #1052e2e8;
+}
+
+body.dark-mode .sidebar-right .email-link:hover {
+  color: #ffffffe8;
+}
+
+body.dark-mode .sidebar-right .line {
+  background-color: #1052e2e8;
+}
+
+/* ThemeToggleButton */
+body.dark-mode .theme-toggle-icon {
+  color: #1052e2e8;
+}
+
+body.dark-mode .theme-toggle-icon:hover {
+  color: #ffffff;
+}
+
+/* Home */
+body.dark-mode .home-intro {
+  color: #fff;
+}
+
+body.dark-mode .home-name {
+  color: #fff;
+}
+
+body.dark-mode .home-lastname {
+  color: #1052e2e8;
+}
+
+body.dark-mode .home-subtitle {
+  color: #ccc;
+}
+
+body.dark-mode .home-description {
+  color: #aaa;
+}
+
+body.dark-mode .cv-download {
+  color: #1052e2e8;
+}
+
+body.dark-mode .cv-download:hover {
+  color: #969dace8;
+}
+
+/* Projects */
+body.dark-mode .projects-title-my {
+  color: #fff;
+}
+
+body.dark-mode .projects-title-works {
+  color: #1052e2e8;
+}
+
+body.dark-mode .projects-subtitle {
+  color: #ccc;
+}
+
+body.dark-mode .project-title {
+  color: #fff;
+}
+
+body.dark-mode .project-tag {
+  background-color: #1052e2e8;
+  color: #fff;
+}
+
+/* Skills */
+body.dark-mode .skills-title-my {
+  color: #fff;
+}
+
+body.dark-mode .skills-title-skills {
+  color: #1052e2e8;
+}
+
+body.dark-mode .skills-subtitle {
+  color: #ccc;
+}
+
+body.dark-mode .skill-card {
+  background: #333;
+  color: #fff;
+  border-color: #444;
+}

@@ -129,3 +129,43 @@ export const skillsDataWeb = [
     ],
   },
 ] as const;
+
+export const projectsData = [
+  {
+    name: "Find Countries App",
+    url: "https://dci-spa-find-countries-app-witv.vercel.app/",
+    image: "src/assets/images/projects_img/FindCountriesApp.png",
+    tags: ["React", "API", "CSS"],
+  },
+  {
+    name: "The Modern House",
+    url: "https://baltasargd.github.io/The-Modern-House/",
+    image: "src/assets/images/projects_img/TheModernHouse.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    name: "Portfolio BGD",
+    url: "https://portfolio-bgd.vercel.app/",
+    image: "src/assets/images/projects_img/PortfolioBGD.png",
+    tags: ["React", "Tailwind", "Vite"],
+  },
+  {
+    name: "To-Do List",
+    url: "https://to-do-list-mauve-eta.vercel.app/",
+    image: "src/assets/images/projects_img/ToDoList.png",
+    tags: ["React", "CSS", "LocalStorage"],
+  },
+  {
+    name: "Tarjeta Mercedes Benz",
+    url: "https://tarjeta-mercedes-benz.vercel.app/",
+    image: "src/assets/images/projects_img/MercedesBenzCard.png",
+    tags: ["HTML", "CSS"],
+  },
+  {
+    name: "Weather App",
+    url: "https://web-dev-course-spa-weather-app.vercel.app/",
+    image: "src/assets/images/projects_img/WeatherApp.png",
+    tags: ["React", "API", "CSS"],
+  },
+  
+];

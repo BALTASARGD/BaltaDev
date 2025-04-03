@@ -5,13 +5,19 @@ import Skills from "../pages/Skills";
 import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
 
+const routes = [
+  { path: "/", element: <Home /> },
+  { path: "/skills", element: <Skills /> },
+  { path: "/projects", element: <Projects /> },
+  { path: "/contact", element: <Contact /> },
+];
+
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/skills" element={<Skills />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/contact" element={<Contact />} />
+      {routes.map((route, index) => (
+        <Route key={index} path={route.path} element={route.element} />
+      ))}
     </Routes>
   );
 };

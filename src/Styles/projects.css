@@ -33,11 +33,11 @@
 }
 
 .projects-title-my {
-  color: #000; /* Negro */
+  color: var(--secondary-color); /* Negro */
 }
 
 .projects-title-works {
-  color: #ff6600; /* Naranja */
+  color: var(--primary-color); /* Naranja */
 }
 .projects-subtitle{
   font-size: 2rem;
@@ -115,9 +115,9 @@
 }
 
 .project-tag {
-  background-color: #ff6600;
-  color: #fff;
-  font-size: 0.9rem;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  font-size: var(--font-size-small);
   padding: 5px 10px;
   border-radius: 5px;
   text-transform: uppercase;

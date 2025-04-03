@@ -1,60 +1,14 @@
-
-
-body.dark-mode {
-  background-color: #151544;
-  color: #fff;
-}
-
-body.dark-mode .sidebar-right .icon-link {
-  color: #1052e2e8;
-}
-
-
+/* Estilos específicos del botón */
 .theme-toggle-icon {
   position: fixed;
   bottom: 40px;
   right: 45px;
   font-size: 2.5rem; /* Tamaño del ícono */
-  color: #ff6600;
+  color: var(--primary-color);
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
 .theme-toggle-icon:hover {
-  color: #e65c00;
-}
-
-body.dark-mode .theme-toggle-icon {
-  color: #1052e2e8;
-}
-
-body.dark-mode .theme-toggle-icon:hover {
-  color: #ffffff;
-}
-/*en dark mode cambiar cambiar los titulos a color blanco*/
-body.dark-mode .home-intro {
-  color: #fff;
-}
-body.dark-mode .home-name {
-  color: #fff;
-}
-
-body.dark-mode .home-lastname {
-  color: #1052e2e8;
-}
-
-body.dark-mode .home-subtitle {
-  color: #ccc;
-}
-
-body.dark-mode .home-description {
-  color: #aaa;
-}
-
-body.dark-mode .cv-download {
-  color: #1052e2e8;
-}
-
-body.dark-mode .cv-download:hover {
-  color: #969dace8;
+  color: var(--secondary-color);
 }
