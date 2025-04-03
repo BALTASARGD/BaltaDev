@@ -12,7 +12,7 @@ const Projects = () => {
           <span className="projects-title-works">Works</span>
         </h1>
         <p className="projects-subtitle">
-          Explore my portfolio to see examples of my work\nthat demonstrate my skills and dedication to web development.
+          Explore my portfolio to see examples of my work that demonstrate my skills and dedication to web development. <br /> Each project represents a milestone in my journey as a developer.
         </p>
       </div>
       <div className="projects-grid">
