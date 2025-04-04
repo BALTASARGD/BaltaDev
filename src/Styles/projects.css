@@ -152,11 +152,11 @@ margin-left: 1200px;
 .line2-projects{
   width: 600px;
   height: 100%;
-color: #fff;
+color: var(--primary-color);
 font-size: 30px;
 
-  margin-left: 760px;
-  margin-top: 50px;
+  margin-left: 800px;
+  margin-top: 80px;
 }
 
 @keyframes fadeInGrow {

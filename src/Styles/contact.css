@@ -1,7 +1,7 @@
 /* Estilos generales */
 .contact {
   position: relative;
-  min-height: 100vh;
+  max-height: 100vh;
   padding: 50px;
   box-sizing: border-box;
   color: #333;
@@ -76,8 +76,8 @@
 .contact-thankyou {
   font-size: 1.9rem;
   color: #ff6600;
-  margin-top: 320px;
-  margin-right: 25px;
+  margin-top: 350px;
+  margin-right: -40px;
 }
 
 /* Estilo para la flecha */

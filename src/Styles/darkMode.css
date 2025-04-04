@@ -82,7 +82,9 @@ body.dark-mode .projects-subtitle {
   color: #fff; /* Blanco inicial */
   animation: fadeInGrowDark 3s ease-out forwards; /* Usa la animación específica del modo oscuro */
 }
-
+body.dark-mode .line2-projects{
+  color: #fff;
+}
 /* Skills */
 body.dark-mode .skills-title-my {
   color: #fff;
