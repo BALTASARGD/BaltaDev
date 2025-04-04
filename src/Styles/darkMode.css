@@ -29,6 +29,9 @@ body.dark-mode .sidebar-right .email-link:hover {
 body.dark-mode .sidebar-right .line {
   background-color: #1b78cfe8; /* Actualizado */
 }
+body.dark-mode .sidebar-right .line22{
+  background-color: #1b78cfe8;
+}
 
 /* ThemeToggleButton */
 body.dark-mode .theme-toggle-icon {
@@ -60,7 +63,7 @@ body.dark-mode .home-description {
   color: #aaa;
 }
 body.dark-mode .cv-download{
-  color: #1b78cfe8;
+  color: #fff;
 }
 body.dark-mode .home-footer{
   color: #1b78cfe8;
@@ -100,6 +103,9 @@ body.dark-mode .skill-name {
   color: #1b78cfe8;
   
 }
+body.dark-mode .line2-skills{
+  color: #fff;
+}
 
 /* Contact */
 body.dark-mode .contact-title-my {
@@ -117,6 +123,9 @@ body.dark-mode .contact-invite {
 }
 body.dark-mode .contact-thankyou {
   color: white; /* Azul */
+}
+body.dark-mode .contact-arrow {
+  color: #1b78cfe8; /* Azul */
 }
 
 

@@ -7,8 +7,10 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Atma", system-ui; /* Cambiar la fuente predeterminada */
-  color: #fff;
+  box-sizing: border-box;
+  font-family: "Atma", system-ui, sans-serif; /* Cambiar la fuente predeterminada */
+  color: #333;
+  background-color: #f5f5f5;
   position: relative;
 }
 
@@ -30,6 +32,11 @@ body::before {
   filter: blur(8px) brightness(1.2); /* Difumina y aclara la imagen */
   opacity: 0.2; /* Hace que la imagen sea muy clara */
   z-index: -1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,6 +62,12 @@ a:hover {
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
 }
 
 button {

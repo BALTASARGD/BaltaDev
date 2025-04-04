@@ -25,6 +25,7 @@ const Projects = () => {
           />
         ))}
       </div>
+      <div className="line2-projects">Ideas brought to life.</div>
     </div>
   );
 };

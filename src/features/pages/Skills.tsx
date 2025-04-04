@@ -48,6 +48,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
+      <div className="line2-skills">Skills that shape my work</div>
     </div>
   );
 };

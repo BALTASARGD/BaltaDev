@@ -149,6 +149,15 @@ margin-left: 1200px;
 .project-icon-link:hover {
   color: var(--primary-color);
 }
+.line2-projects{
+  width: 600px;
+  height: 100%;
+color: #fff;
+font-size: 30px;
+
+  margin-left: 760px;
+  margin-top: 50px;
+}
 
 @keyframes fadeInGrow {
   0% {
@@ -165,6 +174,21 @@ margin-left: 1200px;
     opacity: 1;
     transform: scale(0.8) translateY(0); /* Tamaño normal */
     color: #1052e2e8; /* Naranja */
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-card {
+    height: auto;
+  }
+
+  .project-image {
+    height: auto;
   }
 }
 

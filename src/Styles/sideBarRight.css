@@ -16,14 +16,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: -155px;
+  margin-top: -255px;
   height: 50%;
   width: 4rem;
 }
 
-.sidebar-right .icon-link {
-  /* Usa los estilos globales de enlaces */
-}
 
 .sidebar-right .icon-link:hover {
   color: #000000;
@@ -47,7 +44,8 @@
 .sidebar-right .email-link {
   color: #ff6600;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 20px;
+  
   transition: color 0.2s ease-in-out;
 }
 
@@ -65,24 +63,33 @@
 }
 
 .sidebar-right .line {
-  width: 0.25rem;
+  width: 2px;
   height: 100%;
   background-color: #ff6600;
 }
 
 /* Línea horizontal a la izquierda del icono dark-mode */
-.sidebar-right .darkmode-line {
+.sidebar-right .line2 {
   position: absolute;
   bottom: -20px; /* Alineado con el icono dark-mode */
   right: 85px; /* Espaciado desde el icono */
   width: 600px; /* Longitud de la línea */
-  height: 4px; /* Grosor de la línea */
+  height: 2px; /* Grosor de la línea */
+  background-color: #ff6600; /* Naranja para el modo claro */
+  z-index: 1000;
+}
+.sidebar-right .line22{
+  position: absolute;
+  bottom: -20px; /* Alineado con el icono dark-mode */
+  right: 1120px; /* Espaciado desde el icono */
+  width: 600px; /* Longitud de la línea */
+  height: 2px; /* Grosor de la línea */
   background-color: #ff6600; /* Naranja para el modo claro */
   z-index: 1000;
 }
 
 /* Estilo para la línea en modo oscuro */
-body.dark-mode .sidebar-right .darkmode-line {
+body.dark-mode .sidebar-right .line2 {
   background-color: #1b78cf; /* Azul para el modo oscuro */
 }
 

@@ -1,10 +1,10 @@
+/* Estilos generales */
 .contact {
   position: relative;
   min-height: 100vh;
   padding: 50px;
   box-sizing: border-box;
   color: #333;
-  
 }
 
 .contact::before {
@@ -14,21 +14,19 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('src/assets/images/images.jpeg') no-repeat center center fixed;
+  background: url('public/assets/images/images.jpeg') no-repeat center center fixed;
   background-size: cover;
   filter: blur(8px) brightness(1.2);
   opacity: 0.2;
   z-index: -1;
 }
 
+/* Estilos de contenedores */
 .contact-header {
+  
   margin-bottom: 30px;
   margin-left: -1220px; /* Igual que en Skills y Projects */
   font-family: "Atma", system-ui; /* Aplicar la fuente */
-}
-
-.contact-title {
-  /* Usa los estilos globales de .section-title */
 }
 
 .contact-title-my {
@@ -37,7 +35,7 @@
 }
 
 .contact-title-contact {
-  color: #ff6600; /* Naranja */
+  color: #ff6600;
 }
 
 .contact-content {
@@ -50,28 +48,6 @@
   color: black;
   margin-bottom: 20px;
   font-family: "Atma", system-ui;
-  opacity: 0; /* Comienza invisible */
-  transform: scale(0.5) translateY(-50%); /* Comienza más pequeño y desplazado */
-  animation: fadeInGrow 2s ease-in-out forwards; /* Usa la animación global */
-  height: 3rem; /* Fija la altura del contenedor */
-}
-
-@keyframes fadeInGrow {
-  0% {
-    opacity: 0;
-    transform: scale(0.8) translateY(-10%);
-    color: black;
-  }
-  50% {
-    opacity: 0.5;
-    transform: scale(1.1) translateY(0);
-    color: var(--secondary-color); /* Negro */
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-    color: var(--primary-color); /* Naranja */
-  }
 }
 
 .contact-invite {
@@ -84,7 +60,7 @@
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-bottom: 300px;
+  margin-bottom: 50px;
 }
 
 .contact-icon {
@@ -98,68 +74,61 @@
 }
 
 .contact-thankyou {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   color: #ff6600;
-  margin-top: 20px;
-}
-
-.contact-form,
-.contact-info {
-  font-family: "Atma", system-ui; /* Aplicar la fuente */
+  margin-top: 320px;
+  margin-right: 25px;
 }
 
 /* Estilo para la flecha */
 .contact-arrow {
   position: fixed;
   top: 50%;
-  left: 50%; /* Comienza en el centro de la pantalla */
-  font-size: 5rem; /* Tamaño grande */
-  color: #ff6600; /* Color naranja para el modo claro */
-  text-shadow: 0 0 10px #ff6600, 0 0 20px #ff6600, 0 0 30px #ff6600; /* Sombra inicial */
-  opacity: 0; /* Comienza invisible */
-  animation: moveToEmailLink 2.5s ease-in-out forwards, blinkAndRemoveShadow 2s ease-in-out 2.5s forwards; /* Animaciones combinadas */
-  animation-delay: 1.25s; /* Comienza a la mitad de la animación existente */
+  left: 50%;
+  font-size: 5rem;
+  color: #ff6600;
+  opacity: 0;
+  animation: moveToEmailLink 2.5s ease-in-out forwards;
   z-index: 1000;
-  transform: translate(-50%, -50%); /* Centra la flecha */
-  filter: drop-shadow(0 0 10px #ff6600); /* Rastro inicial */
+  transform: translate(-50%, -50%);
 }
 
-/* Estilo para la flecha en modo oscuro */
-body.dark-mode .contact-arrow {
-  color: #fff; /* Color blanco para el modo oscuro */
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff; /* Sombra inicial */
-  filter: drop-shadow(0 0 10px #fff); /* Rastro inicial */
-}
-
-/* Animación para mover la flecha hacia el email-link */
+/* Animación para mover la flecha */
 @keyframes moveToEmailLink {
   0% {
     opacity: 0;
-    transform: translate(-50%, -50%) scale(1); /* Comienza en el centro */
-    filter: drop-shadow(0 0 10px currentColor); /* Rastro inicial */
+    transform: translate(-50%, -50%) scale(1);
   }
   100% {
     opacity: 1;
-    transform: translate(800px, -50%) scale(1); /* Llega al email-link */
-    filter: drop-shadow(0 0 30px currentColor); /* Rastro final */
+    transform: translate(800px, -50%) scale(1);
   }
 }
 
-/* Animación para parpadear y eliminar la sombra al final */
-@keyframes blinkAndRemoveShadow {
-  0% {
-    opacity: 1;
-    text-shadow: 0 0 15px currentColor, 0 0 25px currentColor, 0 0 35px currentColor; /* Sombra inicial */
-    filter: drop-shadow(0 0 15px currentColor);
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .contact {
+    padding: 20px;
   }
-  50% {
-    opacity: 0.5;
-    text-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor; /* Sombra reducida */
-    filter: drop-shadow(0 0 5px currentColor);
+
+  .contact-title-my {
+    font-size: 2rem;
   }
-  100% {
-    opacity: 1; /* Mantiene la opacidad */
-    text-shadow: none; /* Elimina la sombra */
-    filter: none; /* Elimina el rastro */
+
+  .contact-title-contact {
+    font-size: 2.5rem;
+  }
+
+  .contact-description {
+    font-size: 1.2rem;
+  }
+
+  .contact-icons {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .contact-thankyou {
+    font-size: 1rem;
   }
 }
