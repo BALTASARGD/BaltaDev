@@ -14,7 +14,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../assets/images/background.jpg') no-repeat center center fixed;
+  background: url('src/assets/images/images.jpeg') no-repeat center center fixed;
   background-size: cover;
   filter: blur(8px) brightness(1.2);
   opacity: 0.2;

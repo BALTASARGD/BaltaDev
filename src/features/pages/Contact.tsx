@@ -13,9 +13,7 @@ const Contact = () => {
           Feel free to reach out to me for any inquiries or collaborations!
         </p>
         <p className="contact-invite">Let's build something amazing together.</p>
-        <div className="contact-icons">
-          {/* Aquí puedes añadir íconos de contacto */}
-        </div>
+        <div className="contact-icons"></div>
         <p className="contact-thankyou">Thank you for visiting my portfolio!</p>
       </div>
       <div className="contact-arrow">➡</div>
