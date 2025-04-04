@@ -67,7 +67,7 @@ body.dark-mode .home-footer{
 }
 
 /* Projects */
-body.dark-mode .projects-title-my {
+body.dark-mode .section-title-main{
   color: #fff;
 }
 
@@ -103,10 +103,10 @@ body.dark-mode .skill-name {
 
 /* Contact */
 body.dark-mode .contact-title-my {
-  color: #fff;
+  color: #fff; /* Blanco */
 }
-body.dark-mode .contact-title-contact {
-  color: #1b78cfe8; /* Actualizado */
+body.dark-mode .section-title-highlight {
+  color: #1b78cfe8; /* Azul */
 }
 body.dark-mode .contact-description {
   color: #fff; /* Blanco inicial */
