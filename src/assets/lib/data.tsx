@@ -23,6 +23,23 @@ export const sideBarLeftSocials = [
   },
 ] as const;
 
+export const skillsRow1 = [
+  { name: "HTML", icon: "/assets/icons/htmlicon.svg", color: "#F1662A" },
+  { name: "CSS", icon: "/assets/icons/cssicon.svg", color: "#1572B6" },
+  { name: "JavaScript", icon: "/assets/icons/javascripticon.svg", color: "#F7DF1E" },
+  { name: "React", icon: "/assets/icons/reacticon.svg", color: "#61DAFB" },
+  { name: "Node.js", icon: "/assets/icons/nodejsicon.svg", color: "#339933" },
+  { name: "Git", icon: "/assets/icons/Git-Icon-1788C.svg", color: "#F05032" },
+  { name: "GitHub", icon: "/assets/icons/github-color.svg", color: "#181717" },
+  { name: "SASS", icon: "/assets/icons/sassicon.svg", color: "#CC6699" },
+];
+
+export const skillsRow2 = [
+  { name: "Responsive", icon: "/assets/icons/responsive-design.png", color: "#38B2AC" },
+  { name: "Terminal", icon: "/assets/icons/terminal-svgrepo-com.svg", color: "#000000" },
+  { name: "Tailwind", icon: "/assets/icons/tailwindicon.svg", color: "#38B2AC" },
+];
+
 export const skillsDataWeb = [
   {
     skillsTitle: "WebDevelopment",

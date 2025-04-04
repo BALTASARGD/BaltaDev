@@ -62,6 +62,9 @@ body.dark-mode .home-description {
 body.dark-mode .cv-download{
   color: #1b78cfe8;
 }
+body.dark-mode .home-footer{
+  color: #1b78cfe8;
+}
 
 /* Projects */
 body.dark-mode .projects-title-my {
