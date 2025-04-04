@@ -1,6 +1,6 @@
 import React from "react";
 import "../../Styles/projects.css";
-import { projectsData } from "../../assets/lib/data";
+import { projectsData } from "../../assets/lib/data"; // Cambia la ruta para usar el archivo en src
 import ProjectCard from "../components/ProjectCard";
 import SectionTitle from "../components/SectionTitle";
 

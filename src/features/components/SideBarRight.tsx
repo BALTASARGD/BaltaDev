@@ -1,5 +1,5 @@
 import React from "react";
-import { sideBarLeftSocials, sideBarRightMail } from "../../assets/lib/data";
+import { sideBarLeftSocials, sideBarRightMail } from "../../../public/assets/lib/data";
 import "../../Styles/sideBarRight.css";
 
 const SideBarRight: React.FC = () => {
